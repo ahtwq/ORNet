@@ -154,6 +154,8 @@ python train_single.py -h
 | ORNet(alpha=0.2) | ResNet50   | Messidor   | DR&DME   | 84.00   |92.17   |90.67   |
 | ORNet(alpha=0.4) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.83   |91.25  |
 | ORNet(alpha=0.6) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.59   |91.33   |
+
+
 For medssidor dataset, the results are the mean values of 10-fold cross-validation.
 
 
