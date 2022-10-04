@@ -26,7 +26,6 @@ The severity of diseases develops gradually, and early screening is critical to 
 ## Folder tree
 
 ```
-./
 ├── Data
 │   ├── idrid
 │   │   ├── process.py
@@ -136,9 +135,9 @@ python train_single.py -h
 | method   | backbone | dataset | disease | accuracy |
 |----------|----------|---------|---------|----------|
 | ResNet50 | -        | IDRiD   | DR      | 72.82   |
-| ORNet($\alpha=0.1$)    | ResNet50        | IDRiD   | DR      | 75.73   |
-| ORNet($\alpha=0.125$)   | ResNet50        | IDRiD   | DR      | 76.70   |
-| ORNet($\alpha=0.15$)    | ResNet50        | IDRiD   | DR      | 73.79   |
+| ORNet(alpha=0.1)    | ResNet50        | IDRiD   | DR      | 75.73   |
+| ORNet(alpha=0.125)   | ResNet50        | IDRiD   | DR      | 76.70   |
+| ORNet(alpha=0.15)    | ResNet50        | IDRiD   | DR      | 73.79   |
 
 
 - joint task
@@ -146,15 +145,15 @@ python train_single.py -h
 | method   | backbone | dataset | disease | Joint accuracy | DR accuracy | DME accuracy |
 |----------|----------|---------|---------|----------|---------|----------|
 | ResNet50 | -        | IDRiD   | DR&DME      | 62.14   | 71.84 | 79.61|
-| ORNet($\alpha=0.1$) | ResNet50| IDRiD   | DR&DME  | 67.96   |75.73   |81.55   |
+| ORNet(alpha=0.1) | ResNet50| IDRiD   | DR&DME  | 67.96   |75.73   |81.55   |
 
 | method   | backbone | dataset | disease | Joint accuracy | DR accuracy | DME accuracy |
 |----------|----------|---------|---------|----------|---------|----------|
 | ResNet50 | -        | Messidor   | DR&DME      | 83.25   | 91.75 | 90.58 |
-| ORNet($\alpha=0.1$) | ResNet50   | Messidor   | DR&DME   | 84.83   |93.17   |91.17   |
-| ORNet($\alpha=0.2$) | ResNet50   | Messidor   | DR&DME   | 84.00   |92.17   |90.67   |
-| ORNet($\alpha=0.4$) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.83   |91.25  |
-| ORNet($\alpha=0.6$) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.59   |91.33   |
+| ORNet(alpha=0.1) | ResNet50   | Messidor   | DR&DME   | 84.83   |93.17   |91.17   |
+| ORNet(alpha=0.2) | ResNet50   | Messidor   | DR&DME   | 84.00   |92.17   |90.67   |
+| ORNet(alpha=0.4) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.83   |91.25  |
+| ORNet(alpha=0.6) | ResNet50   | Messidor   | DR&DME   | 84.67   |92.59   |91.33   |
 For medssidor dataset, the results are the mean values of 10-fold cross-validation.
 
 
