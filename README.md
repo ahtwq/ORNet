@@ -15,7 +15,8 @@ The severity of diseases develops gradually, and early screening is critical to 
 - Torchvision = 0.5.0
 - Timm = 0.4.12
 
-## 文件结构
+## Folder tree
+
 ```
 ├── checkpoint.md
 ├── Data
@@ -44,18 +45,6 @@ The severity of diseases develops gradually, and early screening is critical to 
 │   │   ├── valid_0.15.txt
 │   │   └── valid.txt
 │   └── messidor
-│       ├── fold0.txt
-│       ├── fold1-9.txt
-│       ├── fold1.txt
-│       ├── fold2.txt
-│       ├── fold3.txt
-│       ├── fold4.txt
-│       ├── fold5.txt
-│       ├── fold6.txt
-│       ├── fold7.txt
-│       ├── fold8.txt
-│       ├── fold9.txt
-│       ├── rename.py
 │       ├── test0.txt
 │       ├── test1.txt
 │       ├── test2.txt
@@ -103,7 +92,6 @@ The severity of diseases develops gradually, and early screening is critical to 
 ├── train_r50_single.py
 ├── tree.txt
 └── utils.py
-
 ```
 
 ## Quick Start
