@@ -82,6 +82,7 @@ The severity of diseases develops gradually, and early screening is critical to 
 │   │   └── readme.txt
 │   └── singleNet.py
 ├── outputs
+├── nodule_runa16
 ├── README.md
 ├── run_single_idrid.sh
 ├── scripts
