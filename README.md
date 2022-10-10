@@ -116,8 +116,8 @@ You can see more options from
 python train_single.py -h
 ```
 
-
 ## Performance
+
 - single task
 
 | method   | backbone | dataset | disease | accuracy |
@@ -146,6 +146,7 @@ python train_single.py -h
 For medssidor dataset, the results are the mean values of 10-fold cross-validation.
 
 ## Citing ORNet
+
 If you find this repo useful for your research, please consider citing the paper (waiting for review results).
 ```
 @inproceedings{tang2022disease,
