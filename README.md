@@ -37,7 +37,7 @@ Download the github repository, and run the following command directly:
 bash test_single_idrid.sh
 ```
 
-to test the script.
+to test the script. Due to the space limit, we upload some sample images to the dataset folder `./Data/idrid/train_resize1024`,`./Data/idrid/test_resize1024`.
 
 
 
