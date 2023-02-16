@@ -12,6 +12,6 @@ python train_r50_single.py --dir $folder --datasetName $dsName --disease $diseas
 # ORNet
 a=0.1
 folder="r50_idrid_dr_ornet"
-python train_r50_single.py --dir $folder --datasetName $dsName --disease $disease --epochs 180 --lr 0.0005 --batch_size 6 --momentum 0.95 --wd 1e-4 --gamma 0.5 --nesterov --alpha $a --lsce
+python train_r50_single.py --dir $folder --datasetName $dsName --disease $disease -num_classes $n --epochs 180 --lr 0.0005 --batch_size 6 --momentum 0.95 --wd 1e-4 --gamma 0.5 --nesterov --alpha $a --lsce
 
 

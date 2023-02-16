@@ -8,7 +8,7 @@ Please note that some hyper-parameters(such as learing rate, batch size, etc.) m
 
 
 ## Introduction
-The severity of diseases develops gradually, and early screening is critical to apply timely medical interventions. Previous deep learning classification methods for disease grading have ignored the ordinal relationships among stages of disease severity, but this study shows they can be used to boost disease-grading performance. In this paper, we design an ordinal regularized module to represent the orderliness in disease severity, which can be flexibly embedded into general classification networks to grade diseases more accurately. In addition, this ordinal regularized module also predicts the progress of disease development. The proposed method is evaluated on three public benchmark datasets: the IDRiD challenge dataset, LUng Nodule Analysis 2016 (LUNA16) dataset, and Messidor dataset. Experiments show that the proposed method is not only superior to the baselines from common classification models but also outperforms deep learning approaches, especially on the IDRiD challenge dataset, where our method has a joint accuracy of 68.0\%. Furthermore, the proposed method achieves excellent performance in both single-disease and joint-disease grading tasks on the aforementioned datasets, and it can be applied to other disease-grading tasks.
+The severity of diseases develops gradually, and early screening is critical to apply timely medical interventions. Previous deep learning classification methods for disease grading have ignored the ordinal relationships among stages of disease severity, but this study shows they can be used to boost disease-grading performance. In this paper, we design an ordinal regularized module to represent the orderliness in disease severity, which can be flexibly embedded into general classification networks to grade diseases more accurately. In addition, this ordinal regularized module also predicts the progress of disease development. The proposed method is evaluated on three public benchmark datasets: the IDRiD challenge dataset, LUng Nodule Analysis 2016 (LUNA16) dataset, and Messidor dataset. Experiments show that the proposed method is not only superior to the baselines from common classification models but also outperforms deep learning approaches, especially on the IDRiD challenge dataset, where our method has a joint accuracy of 68.0%. Furthermore, the proposed method achieves excellent performance in both single-disease and joint-disease grading tasks on the aforementioned datasets, and it can be applied to other disease-grading tasks.
 
 
 
@@ -16,6 +16,7 @@ The severity of diseases develops gradually, and early screening is critical to 
 - upload the data download link in `./Data/idrid/readme.txt`
 - Method `CANet` for Joint-task is added.
 - add the selection of optimizer, such as `Adam` 
+- add a testing case, run `bash test_single_idrid.sh` at the terminal.
 
 
 
@@ -30,7 +31,18 @@ The severity of diseases develops gradually, and early screening is critical to 
 
 
 ## Quick Start
+Download the github repository, and run the following command directly:
+
+```bash
+bash test_single_idrid.sh
+```
+
+to test the script.
+
+
+
 ### Data Preparation
+
 - data split (see in `./ground`)
 - data processing (see in `./Data`). 
 
