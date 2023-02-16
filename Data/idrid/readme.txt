@@ -11,3 +11,6 @@ You can also download the processed data directly from Baidu Cloud. (https://pan
 
 
 3. move images to test_resize1024 and train_resize1024
+
+NOTE:
+The folder have some images for testing.  If you download the full dataset, you can choose to delete it.
