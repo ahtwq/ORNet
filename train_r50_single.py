@@ -267,7 +267,7 @@ if __name__ == "__main__":
     scheduler = lr_scheduler.StepLR(optimizer, step_size=args.epochs//3, gamma=args.gamma)
 
     # training
-    dicout = train(model, criterion, optimizer, scheduler, args.epochs)
+    dicout = train(model, criterion, optimizer, scheduler, args.num_classes, args.epochs)
     keys = ['best', 'last'] if dicout['best'][0] > 0 else ['last']
 
     # Tesing
@@ -282,6 +282,6 @@ if __name__ == "__main__":
         print('-'*50)
         weight_path = os.path.join(args.dir, 'checkpoint_{}.pth'.format(str(key)))
         model.load_state_dict(torch.load(weight_path))
-        eval(loaders['test'], model, criterion)
+        eval(loaders['test'], model, criterion, args.num_classes)
         print()
     print()
