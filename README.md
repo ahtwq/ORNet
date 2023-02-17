@@ -23,14 +23,18 @@ The severity of diseases develops gradually, and early screening is critical to 
 ## Installation
 
 ### Requirements
-- Linux with Python = 3.6, Titan X GPU
+- Linux with Python = 3.6, Titan X Pascal GPU
 - PyTorch = 1.4.0
 - Torchvision = 0.5.0
 - Timm = 0.4.12
+- ......
+
+The full version can be seen in `requirements.txt`.
 
 
 
 ## Quick Start
+
 Download the github repository, and run the following command directly:
 
 ```bash
