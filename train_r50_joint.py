@@ -305,12 +305,15 @@ if __name__ == "__main__":
 
     # training
     dicout = train(model, criterion, optimizer, scheduler, args.epochs)
+    keys = ['best', 'last'] if dicout['best'][0] > 0 else ['last']
 
     # Tesing
     print()
+    if len(keys) == 1:
+        print('network accuray on the train dataset is low, strongly recommend retraining the network!!!')
     print('Train over. Testing ......')
     print('**alpha={}'.format(args.alpha))
-    for key in ['best', 'last']:
+    for key in keys:
         res = dicout[key]
         print('epochs:{}, train acc:{:.2%}, valid acc:{:.2%}'.format(res[0], res[1], res[2]))
         print('-'*50)
