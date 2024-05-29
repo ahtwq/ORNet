@@ -1,7 +1,7 @@
 # ORNet
 ORNet is a regularized network for medical imaging.
 
-This is the official repo for paper "Disease-Grading Networks with Ordinal Regularization for Medical Imaging" submitted to `Neurocomputing`.
+This is the official repo for paper "Disease-Grading Networks with Ordinal Regularization for Medical Imaging".
 
 Please note that some hyper-parameters(such as learing rate, batch size, etc.) may affect the performance, which can vary among different tasks/environments/software/hardware/random seeds, and thus careful tunning is required.
 
@@ -108,12 +108,14 @@ For medssidor dataset, the results are the mean values of 10-fold cross-validati
 
 If you find this repo useful for your research, please consider citing the paper (waiting for review results).
 ```
-@inproceedings{tang2022disease,
-  title={Disease-Grading Networks with Ordinal Regularization for Medical Imaging},
-  author={Tang, Wenqiang and Yang, zhouwang and Song, Yanzhi},
-  booktitle={},
-  pages={},
-  year={2022}
+@article{tang2023disease,
+  title={Disease-grading networks with ordinal regularization for medical imaging},
+  author={Tang, Wenqiang and Yang, Zhouwang and Song, Yanzhi},
+  journal={Neurocomputing},
+  volume={545},
+  pages={126245},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
